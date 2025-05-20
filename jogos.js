@@ -1,4 +1,4 @@
-export default jogos = [
+const jogos = [
   {
     rodada: 10,
     time1: "São Paulo",
@@ -7,7 +7,7 @@ export default jogos = [
     hora: "18:30",
     canal: "",
     estadio: "Morumbis",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -17,7 +17,7 @@ export default jogos = [
     hora: "18:30",
     canal: "",
     estadio: "Maracanã",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -27,7 +27,7 @@ export default jogos = [
     hora: "21:00",
     canal: "",
     estadio: "Arena MRV",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -37,7 +37,7 @@ export default jogos = [
     hora: "11:00",
     canal: "",
     estadio: "Arena do Grêmio",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -47,7 +47,7 @@ export default jogos = [
     hora: "16:00",
     canal: "",
     estadio: "Allianz Parque",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -57,7 +57,7 @@ export default jogos = [
     hora: "16:00",
     canal: "",
     estadio: "Ilha do Retiro",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -67,7 +67,7 @@ export default jogos = [
     hora: "18:30",
     canal: "",
     estadio: "Barradão",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -77,7 +77,7 @@ export default jogos = [
     hora: "20:30",
     canal: "",
     estadio: "Castelão",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -87,7 +87,7 @@ export default jogos = [
     hora: "20:00",
     canal: "",
     estadio: "Nabi Abi Chedid",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 10,
@@ -97,7 +97,7 @@ export default jogos = [
     hora: "20:00",
     canal: "",
     estadio: "Nilton Santos",
-    campionato: "Brasileirão",
+    campeonato: "Brasileirão",
   },
   {
     rodada: 11,
@@ -207,7 +207,7 @@ export default jogos = [
     hora: "19:00",
     canal: "PREMIERE",
     estadio: "Estádio Nabi Abi Chedid",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 12,
@@ -217,7 +217,7 @@ export default jogos = [
     hora: "19:00",
     canal: "PREMIERE",
     estadio: "Estádio Manoel Barradas",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 12,
@@ -227,7 +227,7 @@ export default jogos = [
     hora: "19:30",
     canal: "RECORD TV/ CAZÉ TV",
     estadio: "Estádio Plácido Aderaldo Castelo",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 12,
@@ -237,7 +237,7 @@ export default jogos = [
     hora: "20:00",
     canal: "GLOBO/ PREMIERE",
     estadio: "Arena do Grêmio",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 12,
@@ -247,7 +247,7 @@ export default jogos = [
     hora: "21:30",
     canal: "",
     estadio: "Arena MRV",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 12,
@@ -257,16 +257,17 @@ export default jogos = [
     hora: "21:30",
     canal: "",
     estadio: "MorumBIS",
-    campionato: "Brasileirão"
-  }
-  rodada: 13,
+    campeonato: "Brasileirão",
+  },
+  {
+    rodada: 13,
     time1: "Bahia",
     time2: "Atlético-MG",
     data: "2025-07-11",
     hora: "23:00",
     canal: "PREMIERE",
     estadio: "Arena Fonte Nova",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -276,7 +277,7 @@ export default jogos = [
     hora: "23:00",
     canal: "GLOBO/ PREMIERE",
     estadio: "Neo Química Arena",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -286,7 +287,7 @@ export default jogos = [
     hora: "23:00",
     canal: "PREMIERE",
     estadio: "Mineirão",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -296,7 +297,7 @@ export default jogos = [
     hora: "23:00",
     canal: "GLOBO/ PREMIERE",
     estadio: "Maracanã",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -306,7 +307,7 @@ export default jogos = [
     hora: "23:00",
     canal: "RECORD TV/ CAZÉ TV",
     estadio: "Arena Castelão",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -316,7 +317,7 @@ export default jogos = [
     hora: "23:00",
     canal: "PREMIERE",
     estadio: "Beira-Rio",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -326,7 +327,7 @@ export default jogos = [
     hora: "23:00",
     canal: "AMAZON PRIME",
     estadio: "Estádio Alfredo Jaconi",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -336,7 +337,7 @@ export default jogos = [
     hora: "23:00",
     canal: "PREMIERE",
     estadio: "Estádio Municipal de Mirassol",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -346,7 +347,7 @@ export default jogos = [
     hora: "23:00",
     canal: "GLOBO/ PREMIERE",
     estadio: "Vila Belmiro",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
   },
   {
     rodada: 13,
@@ -356,7 +357,106 @@ export default jogos = [
     hora: "23:00",
     canal: "SPORT TV/ PREMIERE",
     estadio: "São Januário",
-    campionato: "Brasileirão"
+    campeonato: "Brasileirão",
+  },
+  {
+    rodada: 14,
+    time1: "Atlético-MG",
+    time2: "Sport Recife",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Arena MRV",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Bahia",
+    time2: "Internacional",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Arena Fonte Nova",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Botafogo",
+    time2: "Vitória",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Estádio Nilton Santos",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Ceará",
+    time2: "Corinthians",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Arena Castelão",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Fluminense",
+    time2: "Cruzeiro",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Maracanã",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Grêmio",
+    time2: "Fortaleza",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Arena do Grêmio",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Juventude",
+    time2: "Vasco da Gama",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Estádio Alfredo Jaconi",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Palmeiras",
+    time2: "Mirassol",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Allianz Parque",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "RB Bragantino",
+    time2: "São Paulo",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Estádio Nabi Abi Chedid",
+    campeonato: "Brasileirão"
+  },
+  {
+    rodada: 14,
+    time1: "Santos",
+    time2: "Flamengo",
+    data: "2025-07-15",
+    hora: "23:00",
+    canal: "",
+    estadio: "Vila Belmiro",
+    campeonato: "Brasileirão"
   }
 ];
- 
