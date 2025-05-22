@@ -18,10 +18,16 @@ app.get("/jogos/id/:id", (req, res) => {
   }
 });
 
+app.get("/jogos", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
 app.get("/jogos/nome/:nome", (req, res) => {
   const nome = req.params.nome;
   const jogosEncontrados = jogos.filter(
-    (c) => c.time1.toLowerCase() === nome.toLowerCase() || c.time2.toLowerCase() === nome.toLowerCase()
+    (c) =>
+      c.time1.nome.toLowerCase() === nome.toLowerCase() ||
+      c.time2.nome.toLowerCase() === nome.toLowerCase()
   );
   if (jogosEncontrados.length > 0) {
     res.json(jogosEncontrados);

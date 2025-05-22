@@ -1,0 +1,84 @@
+.card-container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 32.33%);
+  gap: 1%;
+  min-height: 251px;
+}
+
+.found-games-container {
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-container h2 {
+  color: #2d3983;
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.card-header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5165e9;
+  border-radius: 10px 10px 0px 0px;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+.card-header i {
+  margin-right: 5px;
+}
+
+.card-clubes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card-club {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-clubes .card-img-club {
+  width: 80px;
+  height: 80px;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.card-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.card-infos i {
+  color: #5165e9;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.info {
+  font-weight: bold;
+}
