@@ -10,7 +10,7 @@ const jogos = [
       nome: "Mirassol",
       escudo: "https://logodetimes.com/times/mirassol/logo-mirassol-512.png",
     },
-    data: "2025-05-24",
+    data: "2025-05-22",
     hora: "18:30",
     canal: ["Premier", "Globo"],
     estadio: "Morumbis",
@@ -145,9 +145,9 @@ const jogos = [
     id: 9,
     rodada: 10,
     time1: {
-      nome: "RB Bragantino",
+      nome: "Red Bull Bragantino",
       escudo:
-        "https://logodetimes.com/times/rb-bragantino/logo-rb-bragantino-512.png",
+        "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-512.png",
     },
     time2: {
       nome: "Juventude",
@@ -203,9 +203,9 @@ const jogos = [
         "https://logodetimes.com/times/vasco-da-gama/logo-vasco-da-gama-512.png",
     },
     time2: {
-      nome: "RB Bragantino",
+      nome: "Red Bull Bragantino",
       escudo:
-        "https://logodetimes.com/times/rb-bragantino/logo-rb-bragantino-512.png",
+        "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-512.png",
     },
     data: "2025-05-31",
     hora: "21:00",
@@ -359,9 +359,9 @@ const jogos = [
     id: 21,
     rodada: 12,
     time1: {
-      nome: "RB Bragantino",
+      nome: "Red Bull Bragantino",
       escudo:
-        "https://logodetimes.com/times/rb-bragantino/logo-rb-bragantino-512.png",
+        "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-512.png",
     },
     time2: {
       nome: "Bahia",
@@ -490,9 +490,9 @@ const jogos = [
         "https://logodetimes.com/times/corinthians/logo-corinthians-512.png",
     },
     time2: {
-      nome: "RB Bragantino",
+      nome: "Red Bull Bragantino",
       escudo:
-        "https://logodetimes.com/times/rb-bragantino/logo-rb-bragantino-512.png",
+        "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-512.png",
     },
     data: "2025-07-11",
     hora: "23:00",
@@ -760,7 +760,7 @@ const jogos = [
       escudo:
         "https://logodetimes.com/times/vasco-da-gama/logo-vasco-da-gama-512.png",
     },
-    data: "2025-07-15",
+    data: "2025-05-22",
     hora: "23:00",
     canal: ["Premiere"],
     estadio: "Estádio Alfredo Jaconi",
@@ -787,9 +787,9 @@ const jogos = [
     id: 45,
     rodada: 14,
     time1: {
-      nome: "RB Bragantino",
+      nome: "Red Bull Bragantino",
       escudo:
-        "https://logodetimes.com/times/rb-bragantino/logo-rb-bragantino-512.png",
+        "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-512.png",
     },
     time2: {
       nome: "São Paulo",
