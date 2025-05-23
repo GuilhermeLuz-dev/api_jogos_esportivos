@@ -460,3 +460,5 @@ const jogos = [
     campeonato: "Brasileirão",
   },
 ];
+
+module.exports = jogos;

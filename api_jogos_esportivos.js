@@ -7,7 +7,7 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
-// End Point de busca por nomes;
+// End Point de busca por nomes dos times;
 app.get("/jogos/nome/:nome", (req, res) => {
   const nome = req.params.nome;
   let jogosEncontrados = jogos.filter(
@@ -16,16 +16,10 @@ app.get("/jogos/nome/:nome", (req, res) => {
       (c.time2.nome.toLowerCase() === nome.toLowerCase() &&
         new Date(c.data) >= new Date())
   );
-
-  if (jogosEncontrados.length > 0) {
-    res.json(jogosEncontrados);
-  } else {
-    res.json(jogosEncontrados);
-    res.status(404).json({ error: "Jogo não encontrado" });
-  }
+  res.json(jogosEncontrados);
 });
 
-// End Point de busca por campeonato
+// End Point de busca por campeonato;
 app.get("/jogos/campeonato/:campeonato", (req, res) => {
   const campeonato = req.params.campeonato;
   let jogosEncontrados = jogos.filter(
@@ -34,18 +28,12 @@ app.get("/jogos/campeonato/:campeonato", (req, res) => {
       new Date(c.data) >= new Date()
   );
 
-  if (jogosEncontrados.length > 0) {
-    res.json(jogosEncontrados);
-  } else {
-    res.json(jogosEncontrados);
-    res.status(404).json({ error: "Jogo não encontrado" });
-  }
+  res.json(jogosEncontrados);
 });
 
-// End point de busca por rodada;
+// End point de busca por numero da rodada;
 app.get("/jogos/rodada/:rodada", (req, res) => {
   const rodada = req.params.rodada;
-  // Verifica se rodada é um número válido
   if (isNaN(Number(rodada))) {
     res.json({});
     return res.status(400).json({ error: "Rodada deve ser um número" });
@@ -54,12 +42,7 @@ app.get("/jogos/rodada/:rodada", (req, res) => {
     (c) => Number(c.rodada) === Number(rodada) && new Date(c.data) >= new Date()
   );
 
-  if (jogosEncontrados.length > 0) {
-    res.json(jogosEncontrados);
-  } else {
-    res.json(jogosEncontrados);
-    res.status(404).json({ error: "Jogo não encontrado" });
-  }
+  res.json(jogosEncontrados);
 });
 
 // End point de busca por estádio;
@@ -71,16 +54,11 @@ app.get("/jogos/estadio/:estadio", (req, res) => {
       new Date(c.data) >= new Date()
   );
 
-  if (jogosEncontrados.length > 0) {
-    res.json(jogosEncontrados);
-  } else {
-    res.json(jogosEncontrados);
-    res.status(404).json({ error: "Jogo não encontrado" });
-  }
+  res.json(jogosEncontrados);
 });
 
+// End point de busca por jogos da próxima semana;
 app.get("/jogos/data/:data", (req, res) => {
-  const data = req.params.data;
   const jogosProximos = [];
   let currentData = new Date();
   let nextWeek = new Date(currentData);
