@@ -1,9 +1,34 @@
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes cardFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
 .card-container ul {
   display: grid;
   grid-template-columns: repeat(3, 32.33%);
   gap: 1%;
-  padding: 10px 0;
-  min-height: 255px;
+  padding: 10px;
+}
+
+.nextGames {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .found-games-container {
@@ -16,12 +41,25 @@
   margin: 20px 0;
 }
 
+.feedback {
+  font-weight: bold;
+  margin: 0 auto;
+  background-color: #e44040;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  animation: cardFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #d9d9d9;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: cardFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .card-header {
@@ -48,6 +86,7 @@
 
 .card-clubes {
   width: 100%;
+  min-height: 123px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -32,6 +32,7 @@
       <div class="search-container">
         <div class="input-container">
           <input
+            class="input-search"
             id="input-times"
             type="text"
             placeholder="Busque os jogos pelo nome do time..."
@@ -39,165 +40,21 @@
           <img id="search" src="./images/search.png" alt="" />
         </div>
       </div>
-      <div id="found-games" class="card-container">
-        <h2>Jogos encontrados:</h2>
-        <ul id="foundGames" class="found-games-container">
-          <li></li>
-          <li class="loader">
-            <div class="spinner"></div>
-            <span>Carregando jogos...</span>
-          </li>
-          <li></li>
-        </ul>
+      <div class="select-container" id="selectContainer">
+        <select id="select">
+          <option value="nome">Busca por nome</option>
+          <option value="campeonato">Busca por campeonato</option>
+          <option value="rodada">Busca por rodada</option>
+          <option value="estadio">Busca por estadio</option>
+        </select>
+      </div>
+      <div id="foundGamesContainer" class="card-container">
+        <h2 id="labelFoundJogos"></h2>
+        <ul id="foundGames" class="found-games-container"></ul>
       </div>
       <div class="card-container">
-        <h2>Jogos próximos:</h2>
-        <ul>
-          <li class="card">
-            <div class="card-header">
-              <span>
-                <i class="bi bi-calendar2-check"></i>
-                Hoje
-              </span>
-              <span>
-                <i class="bi bi-alarm"></i>
-                16:30
-              </span>
-            </div>
-            <h3 class="rodada">12ª Rodada</h3>
-            <div class="card-clubes">
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-flamengo-512.png"
-                  alt=""
-                />
-                <p>Flamengo</p>
-              </div>
-              <img class="card-icon" src="./images/x.png" alt="" />
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-palmeiras-512.png"
-                  alt=""
-                />
-                <p>Palmeiras</p>
-              </div>
-            </div>
-            <div class="card-infos">
-              <div class="info-trasmissao">
-                <i class="bi bi-tv"></i>
-                <span class="info">Transmissão:</span>
-                <span class="info-canais">Premiere</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bx bx-stadium"></i>
-                <span class="info">Estádio:</span>
-                <span class="info-estadio">Maracana</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bi bi-trophy"></i>
-                <span class="info">Brasileirão Betano</span>
-              </div>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-header">
-              <span>
-                <i class="bi bi-calendar2-check"></i>
-                Hoje
-              </span>
-              <span>
-                <i class="bi bi-alarm"></i>
-                16:30
-              </span>
-            </div>
-            <h3 class="rodada">12ª Rodada</h3>
-            <div class="card-clubes">
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-flamengo-512.png"
-                  alt=""
-                />
-                <p>Flamengo</p>
-              </div>
-              <img class="card-icon" src="./images/x.png" alt="" />
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-palmeiras-512.png"
-                  alt=""
-                />
-                <p>Palmeiras</p>
-              </div>
-            </div>
-            <div class="card-infos">
-              <div class="info-trasmissao">
-                <i class="bi bi-tv"></i>
-                <span class="info">Transmissão:</span>
-                <span class="info-canais">Premiere</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bx bx-stadium"></i>
-                <span class="info">Estádio:</span>
-                <span class="info-estadio">Maracana</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bi bi-trophy"></i>
-                <span class="info">Brasileirão Betano</span>
-              </div>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-header">
-              <span>
-                <i class="bi bi-calendar2-check"></i>
-                Hoje
-              </span>
-              <span>
-                <i class="bi bi-alarm"></i>
-                16:30
-              </span>
-            </div>
-            <h3 class="rodada">12ª Rodada</h3>
-            <div class="card-clubes">
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-flamengo-512.png"
-                  alt=""
-                />
-                <p>Flamengo</p>
-              </div>
-              <img class="card-icon" src="./images/x.png" alt="" />
-              <div class="card-club">
-                <img
-                  class="card-img-club"
-                  src="./images/logo-palmeiras-512.png"
-                  alt=""
-                />
-                <p>Palmeiras</p>
-              </div>
-            </div>
-            <div class="card-infos">
-              <div class="info-trasmissao">
-                <i class="bi bi-tv"></i>
-                <span class="info">Transmissão:</span>
-                <span class="info-canais">Premiere</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bx bx-stadium"></i>
-                <span class="info">Estádio:</span>
-                <span class="info-estadio">Maracana</span>
-              </div>
-              <div class="info-trasmissao">
-                <i class="bi bi-trophy"></i>
-                <span class="info">Brasileirão Betano</span>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <h2 id="labelNextJogos">Jogos próximos:</h2>
+        <ul id="nextGames" class="nextGames"></ul>
       </div>
     </main>
     <script src="main.js"></script>
