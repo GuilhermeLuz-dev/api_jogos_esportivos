@@ -65,15 +65,7 @@ const handleSelect = () => {
   }
 };
 
-searchInput.addEventListener("keypress", (event) => {
-  if (event.key === "Enter") {
-    handleSelect();
-  }
-});
-search.addEventListener("click", () => {
-  handleSelect();
-});
-
+// Listando jogos
 const listJogos = (jogos, foundJogos, label) => {
   foundJogos.innerHTML = "";
   label.innerHTML =
@@ -149,6 +141,7 @@ const meses = [
   "Dez",
 ];
 
+// Formatando data;
 const returnData = (data) => {
   // Corrige o fuso horário criando a data como local
   const [ano, mes, dia] = data.split("-");
@@ -165,6 +158,16 @@ const returnData = (data) => {
   return `${dataFormatada.getDate()} ${meses[dataFormatada.getMonth()]}`;
 };
 
+searchInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    handleSelect();
+  }
+});
+
+search.addEventListener("click", () => {
+  handleSelect();
+});
+// Listando jogos dos próximos 7 dias;
 document.addEventListener("DOMContentLoaded", () => {
   handlePlaceholder();
   const hoje = new Date();
