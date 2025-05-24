@@ -31,11 +31,6 @@
   flex-wrap: nowrap;
 }
 
-.found-games-container {
-  overflow: hidden;
-  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .card-container h2 {
   color: #2d3983;
   margin: 20px 0;
@@ -132,4 +127,15 @@
 
 .info {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card-container ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .card-container ul {
+    grid-template-columns: 100%;
+  }
 }
